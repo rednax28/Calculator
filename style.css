@@ -15,7 +15,7 @@ body{
     background-repeat: no-repeat;    /* prevents tiling */
     background-size: cover;          /* scales image to cover entire body */
     background-position: center;
-    background-color: #5f0a0a;
+    
 }
 
 .clock{
