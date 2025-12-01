@@ -10,7 +10,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #0a0a0a, #3a4452);   
+    background-image: url('FOR_IMAGES/MATH_BACKGROUND.jpg');   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .Calculator{
@@ -37,11 +40,11 @@ input{
     font-size: 40px;
     text-align: right;
     cursor: pointer;
-    color: #ffffff; /* fixes text turning black */
+    color: #000000; /* fixes text turning black */
 }
 
 input::placeholder{
-    color: #ffffff;
+    color: #000000;
 }
 
 /* Grid layout for all buttons */
