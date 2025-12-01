@@ -11,8 +11,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('FOR_IMAGES/MATH_BACKGROUND.jpg');
+    background-image: url('FOR_IMAGES/EYY.png');
+    background-repeat: no-repeat;    /* prevents tiling */
+    background-size: cover;          /* scales image to cover entire body */
+    background-position: center;
+    background-color: #5f0a0a;
+}
 
+.AMEN{
+    width: 100%;
+    height: 25vh; 
 }
 
 .Calculator{
@@ -144,3 +152,4 @@ button{
         gap: 6px;
     }
 }
+
