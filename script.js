@@ -20,7 +20,7 @@ buttons.forEach(button => {
                 expression = eval(expression).toString();
                 input.value = expression;
             } catch (error) {
-                input.value = "Error";
+                input.value = "Syntax Error Loyloy Bayot";
                 expression = "";
             }
         } 
