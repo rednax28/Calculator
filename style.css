@@ -19,6 +19,16 @@ body{
     border-radius: 16px;
     background: transparent;
     box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    max-width: 400px;  /* added to limit max width */
+    width: 90%;        /* added for fluid resizing */
+}
+
+/* Added buttons container styles */
+.buttons {
+    display: flex;
+    flex-direction: column; /* stack button rows vertically */
+    align-items: center;    /* center rows horizontally */
+    gap: 10px;              /* space between rows */
 }
 
 input{
@@ -34,7 +44,6 @@ input{
     font-size: 40px;
     text-align: right;
     cursor: pointer;
-    
 }
 
 input::placeholder{
@@ -43,8 +52,10 @@ input::placeholder{
 
 button{
     border: none;
-    width: 60px;
-    height: 60px;
+    width: 20vw;
+    max-width: 70px;
+    height: 20vw;
+    max-height: 70px;
     margin: 5px;
     border-radius: 50%;
     background: linear-gradient(45deg, #3a4452, #0a0a0a);
@@ -72,4 +83,27 @@ button{
 
 .DIVISION{
     background: linear-gradient(45deg, #574d4d, #421b04);
+}
+
+@media (max-width: 480px) {
+    .Calculator {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    input {
+        font-size: 28px;
+        padding: 18px;
+    }
+
+    button {
+        width: 55px;
+        height: 55px;
+        font-size: 20px;
+        margin: 4px;
+    }
+
+    .buttons {
+        gap: 6px;
+    }
 }
